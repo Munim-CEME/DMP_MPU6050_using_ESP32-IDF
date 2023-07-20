@@ -1,0 +1,16 @@
+[1/10] Performing build step for 'bootloader'
+[1/1] cmd.exe /C "cd /D "E:\Internship Cowlar\MPU-6050\build\bootloader\esp-idf\esptool_py" && D:\Espressif\python_env\idf5.0_py3.11_env\Scripts\python.exe D:/Espressif/frameworks/esp-idf-v5.0.2/components/partition_table/check_sizes.py --offset 0x9900 bootloader 0x1000 "E:/Internship Cowlar/MPU-6050/build/bootloader/bootloader.bin""
+Bootloader binary size 0x73d0 bytes. 0x1530 bytes (15%) free.
+[2/8] Building CXX object esp-idf/main/CMakeFiles/__idf_main.dir/main.cpp.obj
+[3/8] Building CXX object esp-idf/main/CMakeFiles/__idf_main.dir/tasks.cpp.obj
+[4/8] Linking C static library esp-idf\main\libmain.a
+[5/8] Generating ld/sections.ld
+[6/8] Linking CXX executable MPU-6050.elf
+[7/8] Generating binary image from built executable
+esptool.py v4.5.1
+Creating esp32 image...
+Merged 2 ELF sections
+Successfully created esp32 image.
+Generated E:/Internship Cowlar/MPU-6050/build/MPU-6050.bin
+[8/8] cmd.exe /C "cd /D "E:\Internship Cowlar\MPU-6050\build\esp-idf\esptool_py" && D:\Espressif\python_env\idf5.0_py3.11_env\Scripts\python.exe D:/Espressif/frameworks/esp-idf-v5.0.2/components/partition_table/check_sizes.py --offset 0x9900 partition --type app "E:/Internship Cowlar/MPU-6050/build/partition_table/partition-table.bin" "E:/Internship Cowlar/MPU-6050/build/MPU-6050.bin""
+MPU-6050.bin binary size 0x2e8f0 bytes. Smallest app partition is 0x100000 bytes. 0xd1710 bytes (82%) free.
