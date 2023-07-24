@@ -13,5 +13,6 @@
     ],
     "idf.portWin": "COM6",
     "idf.pythonBinPathWin": "D:/Espressif/python_env/idf5.0_py3.11_env/Scripts/python.exe",
-    "idf.toolsPathWin": "D:\\Espressif"
+    "idf.toolsPathWin": "D:\\Espressif",
+    "C_Cpp.errorSquiggles": "disabled"
 }

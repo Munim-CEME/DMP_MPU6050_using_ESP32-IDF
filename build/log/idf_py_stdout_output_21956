@@ -1,8 +1,0 @@
-[0/1] Re-running CMake...
--- ccache will be used for faster recompilation
--- Project is not inside a git repository, or git repository has no commits; will not use 'git describe' to determine PROJECT_VER.
--- Building ESP-IDF components for target esp32
--- Configuring incomplete, errors occurred!
-See also "E:/Internship Cowlar/MPU-6050/build/CMakeFiles/CMakeOutput.log".
-FAILED: build.ninja 
-D:\Espressif\tools\cmake\3.24.0\bin\cmake.exe --regenerate-during-build -S"E:\Internship Cowlar\MPU-6050" -B"E:\Internship Cowlar\MPU-6050\build"

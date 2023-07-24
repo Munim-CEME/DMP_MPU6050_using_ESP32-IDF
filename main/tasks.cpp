@@ -29,6 +29,8 @@ void task_initI2C(void *ignore) {
 	conf.master.clk_speed = 400000;
 	ESP_ERROR_CHECK(i2c_param_config(I2C_NUM_0, &conf));
 	ESP_ERROR_CHECK(i2c_driver_install(I2C_NUM_0, I2C_MODE_MASTER, 0, 0, 0));
+	//printf("this is task 1\n");
+	//vTaskDelay(5000/portTICK_PERIOD_MS);
 	vTaskDelete(NULL);
 }
 
@@ -66,6 +68,13 @@ void task_mpu(void*){
 			printf("YAW: %3.1f, ", ypr[0] * 180/M_PI);
 			printf("PITCH: %3.1f, ", ypr[1] * 180/M_PI);
 			printf("ROLL: %3.1f \n", ypr[2] * 180/M_PI);
+			vTaskDelay(500/portTICK_PERIOD_MS);
+			printf("Quanternions\n");
+			printf("w: %3.1f ", q.w);
+			printf("x: %3.1f ", q.x);
+			printf("y: %3.1f ", q.y);
+			printf("z: %3.1f\n ", q.z);
+			vTaskDelay(500/portTICK_PERIOD_MS);
 	    }
 
 	}
